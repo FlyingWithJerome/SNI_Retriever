@@ -2,7 +2,7 @@
 
 #### - How it works 🐶
 
-Server Name Indication, abbr. SNI allows a server to serve with multiple hostnames. When setting up TLS connections with servers, clients that support SNI appends TLS Extension in their Client Hello packet, showing which hostname they would like to talk with.
+Server Name Indication, abbr. SNI allows a server to serve with multiple hostnames. When setting up TLS connections with servers, clients that support SNI append TLS Extension in their Client Hello packet, showing which hostname they would like to talk with.
 
 SNI Extension includes the following fields:
 
