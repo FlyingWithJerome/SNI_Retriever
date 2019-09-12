@@ -25,7 +25,6 @@ See RFC 3546 Sec. 3.1 for technical standards.
 
 - Runs on Linux and macOS
 
-- Boost.asio (my favorite C++ network server library)
+- Boost.asio
 
-- gtest (my favorite C++ unittest library)
-
+- gtest
