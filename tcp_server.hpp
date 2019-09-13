@@ -10,7 +10,10 @@
 class TCPServer
 {
     public:
-        TCPServer(boost::asio::io_service&);
+        TCPServer(
+            boost::asio::io_service&,
+            const int&
+        );
 
     private:
         void start_accept();

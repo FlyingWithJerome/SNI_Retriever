@@ -1,15 +1,17 @@
 #include "tcp_server.hpp"
 
-TCPServer::TCPServer(boost::asio::io_service& io_service)
+TCPServer::TCPServer(
+    boost::asio::io_service& io_service,
+    const int& port_num
+)
 :acceptor_(
     io_service, 
     boost::asio::ip::tcp::endpoint(
-        boost::asio::ip::address::from_string("129.22.150.52"), 
-        443
+        boost::asio::ip::tcp::v4(),
+        port_num
     )
 )
 {
-    std::cout << "initializing\n";
     start_accept();
 }
 
